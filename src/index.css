@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: linear-gradient(to right, #d4c0a5, #b29d82, #ad916d);
+}
+
+@media print {
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+  table {
+    font-size: 10px;
+  }
+  tr {
+    line-height: 1;
+  }
+  form {
+    display: none;
+  }
+  .linea {
+    display: inline-block;
+    width: 60%;
+    height: 5px;
+    background-color: black;
+    margin-left: 20%;
+  }
+  .bg-green-700, .bg-green-300, .bg-yellow-200, .bg-orange-500, .bg-red-600 {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
